@@ -23,11 +23,123 @@
   color: #61dafb;
 }
 
+.error-text {
+  color: red;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-column {
+  flex-direction: column;
+  justify-content: initial;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -2px;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
+  background-color: white;
+  border-left: 2px solid black;
+}
+
+.submit-button {
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: white;
+}
+
+.delete-button {
+  border: 1px solid red;
+  border-radius: 10px;
+  color: red;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: white;
+}
+
+.submit-button:focus, .delete-button:focus {
+  outline: none;
+}
+
+.submit-button:disabled {
+  background: lightgray;
+  border-radius: 10px;
+  cursor: not-allowed;
+}
+
+.todo-image, .hero-title {
+  width: 30%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .hamburger {
+    width: 10%;
+  }
+
+  .mobile-between {
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+
+  .side-menu-active {
+    width: 250px;
   }
 }

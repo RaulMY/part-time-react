@@ -1,0 +1,56 @@
+.error-message {
+    color: red;
+    font-size: 8px;
+    position: absolute;
+}
+
+.input-box {
+    position: relative;
+}
+
+.my-input {
+    border: 1px grey solid;
+    border-radius: 3px;
+    padding: 5px 8px;
+}
+
+.my-label {
+    color: grey;
+    margin: 5px;
+    padding: 0px 3px;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+}
+
+.error-status {
+    border-color: red;
+}
+
+.valid-status {
+    border-color: green;
+}
+
+input:focus {
+    outline: none;
+}
+
+.label-error {
+    background: white;
+    color: red;
+    font-size: 8px;
+    top: -10px;
+}
+
+.label-valid {
+    background: white;
+    color: green;
+    font-size: 8px;
+    top: -10px;
+}
+
+input:focus + .my-label {
+    background: white;
+    font-size: 8px;
+    top: -10px;
+}
