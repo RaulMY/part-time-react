@@ -1,7 +1,7 @@
 # part-time-react
 Simple React App for the Part Time Lead Teacher Application
 
-#setup
+# setup
 
 First install all the dependencies using the "npm install" command.
 
